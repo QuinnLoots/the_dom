@@ -65,10 +65,12 @@ for (var i = 0; i < lengte; i++) {
 
 
 let array =  ["Silent Teacher","Code Monkey", "CodeCombat"];
+let linkarray = ["http://silentteacher.toxicode.fr/","https://www.playcodemonkey.com/","https://codecombat.com/"];
 for (var i = 0; i < array.length; i++) {
     let entry = document.createElement("li");
     let a = document.createElement("a");
     a.textContent = array[i];
+    a.setAttribute('href', linkarray[i]);
     entry.appendChild(a);
     liste.appendChild(entry);
 }
