@@ -14,6 +14,13 @@ silverRef.classList.remove("bg-silver");
 let quote = document.getElementsByTagName("blockquote");
 quote.classList.add("bg-white");
 
+let query = document.querySelector("my-table");
+query.classList.add("bg-purple");
+var para = document.querySelectorAll("p");
+para.classList.add("shadow");
+
+
+
 
 
 
