@@ -29,15 +29,17 @@ for (let i = 0; i < para.length; i++) {
     para[i].classList.add("shadow");
 }
 
-
-
 let pres = document.getElementsByTagName("pre");
 for (let i = 0; i < pres.length; i++) {
     pres[i].style.color = "red";
-    pres[i].style.backgroundColor = "blue";
+    pres[i].style.backgroundColor = "orange";
     pres[i].style.borderBottom = "3px solid red";
+    pres[i].style.borderTop = "3px solid red";
+   
 
 }
+
+
 
 let heads = document.getElementsByTagName("h3")[0];
 heads.innerHTML="<em>Italic title ! yeah !</em>";
@@ -52,13 +54,13 @@ let li = document.createElement("li");
   li.innerHTML=("My best friend is <a href='http://www.google.com'>Google</a>");
   list.appendChild(li);
 
-  var link = document.querySelectorAll("li a")[0];
+  let link = document.querySelectorAll("li a")[0];
   link.style.color="green";
 
 let liste = document.getElementsByTagName("ol")[0];
 let kinderen = liste.children;
 let lengte = kinderen.length;
-for (var i = 0; i < lengte; i++) {
+for (let i = 0; i < lengte; i++) {
     liste.removeChild(kinderen[0]);
 }
 
